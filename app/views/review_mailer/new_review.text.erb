@@ -1,0 +1,7 @@
+Hello <%= @owner.full_name %>
+Someone posted a review on your product.
+Review: <%= @review.body %>
+Posted by: <%= @review.user.full_name %>
+Click here: <%= "#{product_url(@product)}##{dom_id(@review)}"%> to view your product and review.
+Regards,
+AmazingAmazon Team
